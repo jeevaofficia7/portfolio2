@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", serif;
-  outline: 1px solid red;
 }
 
 body {
@@ -310,9 +309,6 @@ footer ul {
 /*responsive design*/
 
 @media screen and (max-width: 1150px) {
-  body {
-    background-color: tomato;
-  }
   /*padding for header*/
   header {
     padding: 10px 50px;
@@ -320,10 +316,6 @@ footer ul {
 }
 
 @media screen and (max-width: 1120px) {
-  body {
-    background-color: steelblue;
-  }
-
   #img-container {
     position: absolute;
     left: 60%;
@@ -343,18 +335,12 @@ footer ul {
 }
 
 @media screen and (max-width: 1050px) {
-  body {
-    background-color: blueviolet;
-  }
   #img2 {
     right: 230px;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  body {
-    background-color: sienna;
-  }
   #skills-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -373,10 +359,6 @@ footer ul {
   }
 }
 @media screen and (max-width: 920px) {
-  body {
-    background-color: palevioletred;
-  }
-
   #img-container {
     position: absolute;
     left: 50%;
@@ -396,9 +378,6 @@ footer ul {
 }
 
 @media screen and (max-width: 850px) {
-  body {
-    background-color: springgreen;
-  }
   #about-section article p {
     width: 25rem;
   }
@@ -420,10 +399,6 @@ footer ul {
 }
 
 @media screen and (max-width: 800px) {
-  body {
-    background-color: olivedrab;
-  }
-
   #skills-section {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -461,9 +436,6 @@ footer ul {
 }
 
 @media screen and (max-width: 700px) {
-  body {
-    background-color: lavender;
-  }
   header {
     display: flex;
     flex-direction: column;
@@ -504,10 +476,6 @@ footer ul {
 }
 
 @media screen and (max-width: 680px) {
-  body {
-    background-color: turquoise;
-  }
-
   #hero-section p {
     width: 20rem;
     font-size: 14px;
@@ -544,10 +512,6 @@ footer ul {
 }
 
 @media screen and (max-width: 500px) {
-  body {
-    background-color: midnightblue;
-  }
-
   #img-container {
     position: absolute;
     left: 5px;
@@ -559,10 +523,6 @@ footer ul {
 }
 
 @media screen and (max-width: 440px) {
-  body {
-    background-color: pink;
-  }
-
   #about-section article {
     margin-left: 70px;
   }
@@ -585,10 +545,6 @@ footer ul {
 }
 
 @media screen and (max-width: 430px) {
-  body {
-    background-color: tomato;
-  }
-
   #about-section article {
     position: relative;
     right: 60px;
