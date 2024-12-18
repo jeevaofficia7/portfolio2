@@ -555,6 +555,7 @@ footer ul {
     grid-template-columns: repeat(3, 1fr);
     font-size: 10px;
     gap: 0;
+display:none;
   }
 
   #hero-section h1 {
@@ -562,4 +563,6 @@ footer ul {
     position: relative;
     right: 20px;
   }
+
+
 }
