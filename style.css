@@ -308,16 +308,18 @@ footer ul {
 
 /*responsive design*/
 
+/* Adjusted responsive design */
+
+/* Screen width: 1150px */
 @media screen and (max-width: 1150px) {
-  /*padding for header*/
   header {
     padding: 10px 50px;
   }
 }
 
+/* Screen width: 1120px */
 @media screen and (max-width: 1120px) {
   #img-container {
-    position: absolute;
     left: 60%;
   }
 
@@ -329,86 +331,59 @@ footer ul {
     position: relative;
     right: 300px;
   }
+
   #hero-section p {
     width: 35rem;
   }
 }
 
-@media screen and (max-width: 1050px) {
-  #img2 {
-    right: 230px;
-  }
-}
-
+/* Screen width: 1000px */
 @media screen and (max-width: 1000px) {
   #skills-section {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 30px;
   }
+
   #img-container {
-    position: absolute;
     left: 50%;
   }
-  #hero-section p {
-    width: 30rem;
-  }
 
+  #hero-section p,
   #about-section article p {
     width: 30rem;
   }
 }
-@media screen and (max-width: 920px) {
-  #img-container {
-    position: absolute;
-    left: 50%;
-  }
 
-  #hero-section p {
-    width: 25rem;
-  }
-
-  #about-section article {
-    font-size: 14px;
-  }
-
-  #img2 {
-    margin-right: 20px;
-  }
-}
-
+/* Screen width: 850px */
 @media screen and (max-width: 850px) {
   #about-section article p {
     width: 25rem;
   }
+
   #img-container {
-    position: absolute;
     left: 30%;
   }
+
   #hero-section p {
     font-size: 15px;
   }
 
   header {
     padding: 10px 0;
-  }
-
-  header {
     font-size: 15px;
   }
 }
 
+/* Screen width: 800px */
 @media screen and (max-width: 800px) {
   #skills-section {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
-    row-gap: 30px;
   }
 
   #img-container {
-    position: absolute;
     left: 10%;
   }
+
   header #logo a {
     font-size: 14px;
   }
@@ -416,6 +391,7 @@ footer ul {
   #navlinks li a {
     font-size: 12px;
   }
+
   header {
     padding: 15px 20px;
   }
@@ -425,7 +401,6 @@ footer ul {
   }
 
   #interest-section {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -435,24 +410,23 @@ footer ul {
   }
 }
 
+/* Screen width: 700px */
 @media screen and (max-width: 700px) {
   header {
-    display: flex;
     flex-direction: column;
-    position: relative;
   }
-  header #navlinks {
-    display: flex;
+
+  #navlinks {
     flex-direction: column;
-    align-items: center;
     gap: 25px;
     margin: 30px 0;
-    display: none; /*default display none*/
+    display: none; /* Default hidden */
   }
+
   #hamburger {
     position: absolute;
-    display: flex;
     left: 20px;
+    display: flex;
   }
 
   #toggle-div {
@@ -460,60 +434,19 @@ footer ul {
     right: 20px;
   }
 
-  /*active-class using js*/
-  header #navlinks.active-class {
-    display: flex;
+  #hero-section p {
+    display: none;
   }
 
   footer {
     font-size: 12px;
     gap: 30px;
   }
-
-  #hero-section p {
-    display: none;
-  }
 }
 
-@media screen and (max-width: 680px) {
-  #hero-section p {
-    width: 20rem;
-    font-size: 14px;
-  }
-  #hero-section h1 {
-    width: 10rem;
-  }
-
-  #img-container {
-    position: absolute;
-    left: 10px;
-  }
-
-  #about-section img {
-    display: none;
-  }
-  #hero-section p {
-    font-size: 12px;
-  }
-
-  #about-section article {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    font-size: 1rem;
-    position: relative;
-    right: 30px;
-  }
-
-  #about-section article p {
-    font-size: 12px;
-    width: 20rem;
-  }
-}
-
+/* Screen width: 500px */
 @media screen and (max-width: 500px) {
   #img-container {
-    position: absolute;
     left: 5px;
   }
 
@@ -522,13 +455,10 @@ footer ul {
   }
 }
 
+/* Screen width: 440px */
 @media screen and (max-width: 440px) {
   #about-section article {
     margin-left: 70px;
-  }
-
-  #hero-section p {
-    display: none;
   }
 
   #hero-section {
@@ -541,28 +471,25 @@ footer ul {
 
   footer {
     font-size: 10px;
+    display: none;
   }
 }
 
+/* Screen width: 430px */
 @media screen and (max-width: 430px) {
   #about-section article {
-    position: relative;
     right: 60px;
   }
 
   footer {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    font-size: 10px;
     gap: 0;
-display:none;
   }
 
   #hero-section h1 {
     width: 7rem;
-    position: relative;
     right: 20px;
   }
-
-
 }
+
+
