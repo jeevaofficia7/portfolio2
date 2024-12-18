@@ -496,8 +496,8 @@ footer ul {
   }
 
   #about-section article p {
-    font-size: 12px;
-    width: 20rem;
+    font-size: 8px;
+    width: 8rem;
   }
 }
 
@@ -545,7 +545,6 @@ footer ul {
     grid-template-columns: repeat(3, 1fr);
     font-size: 10px;
     gap: 0;
-display:none;
   }
 
   #hero-section h1 {
