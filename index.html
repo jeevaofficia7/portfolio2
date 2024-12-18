@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+  
+    <!--header -start-->
+    <header>
+      <div id="hamburger">
+        <div class="lines"></div>
+        <div class="lines"></div>
+        <div class="lines"></div>
+      </div>
+      <div id="logo">
+        <a href="#">Portfolio</a>
+      </div>
+      <nav id="navigation">
+        <ul id="navlinks">
+          <li><a href="#hero-section">Home</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#skills-section">Skills</a></li>
+          <li><a href="#interest-section">Interest</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="toggle-div">
+        <button id="sun-btn"><i class="fas fa-sun"></i></button>
+      </div>
+    </header>
+    <!--hero section-->
+    <section id="hero-section">
+      <h1>Hi , I'am Jeeva <br> Frontend Developer</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut expedita,
+        incidunt accusantium, architecto velit inventore est quas earum natus
+        rem sapiente eius atque impedit veniam mollitia esse fugit nobis
+        molestiae.
+      </p>
+      <div id="hero-section-btn">
+      <button>Contact</button>
+      <button>Let's Talk</button>
+    </div>
+      <!--social-->
+      <nav id="social">
+        <ul id="social-links">
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div id="img-container">
+        <img src="images/men.png"  alt="">
+      </div>
+    </section>
+    <div class="center-heading">
+      <h1>About Me</h1>
+    </div>
+    <!--about section-->
+    <section id="about-section">
+      <div id="img2">
+        <img src="images/img4.png" alt="">
+      </div>
+      <!--article 1-->
+      <article id="educati#on1">
+       <h1>Education:</h1>
+       <p>Bachelor of commerce in computer application</p>
+       <h1>University:</h1>
+       <p>Bharathiyar University coimbatore</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem deserunt velit alias quas error perferendis reiciendis corrupti molestiae dolore consequatur.</p>
+       <div id="about-btns">
+        <button>More Details</button>
+       </div>
+      </article>
+    </section>
+
+     <div class="center-heading">
+        <h1>Technical Skills</h1>
+     </div>
+    <!--skills section--->
+    <section id="skills-section">
+        <!--article 1-->
+        <article>
+            <a href="#"><i class="fab fa-html5"></i></a>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque libero saepe corporis</p>
+        </article>
+        <!--article 2-->
+        <article>
+            <a href="#"><i class="fab fa-css3"></i></a>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quod dolorum blanditiis cum </p>
+        </article>
+        <!--article 3-->
+        <article>
+            <a href="#"><i class="fab fa-js"></i></a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur perferendis id voluptates </p>
+        </article>
+    </section>
+    <div class ="center-heading">
+        <h1>Interest</h1>
+    </div>
+    <!--intrest section-->
+ 
+    <section id="interest-section">
+        <img src="images/img2.png" alt="">
+        <img src="images/img13.jpg" alt="">
+        <img src="images/img6.png" alt="">
+        <img src="images/img12.jpg" alt="">
+        <img src="images/img17.jpg" alt="">
+        <img src="images/img16.jpg" alt="">
+    </section>
+    <!--footer section start--------------------->
+    <footer>
+        <!--social links-->
+        <nav id="scoial-navigation">
+          <ul id="sociallink">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Whatsapp</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Google</a></li>
+          </ul>
+        </nav>
+        <!--footer links-->
+        <nav id="footer-navigation">
+          <ul id="footerlink">
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Help&Support</a></li>
+          </ul>
+        </nav>
+        <address>
+          Jeeva K <br />
+          Rakkiyapalayam Tiruppur <br />
+          Phone:7550411563 <br />
+          Email: <a href="#">jeeva1293@gmail.com</a>
+        </address>
+        <!--copy rights-->
+        <p>&copy 2024 All rights Reserved.</p>
+      </footer>
+
+      <!---javascript....-->
+      <script>
+        var hamburgerMenu = document.getElementById('hamburger');
+        var navlinks = document.getElementById('navlinks');
+
+        hamburgerMenu.addEventListener('click',()=>{
+          navlinks.classList.toggle('active-class')
+        })
+
+
+        //darkmode..
+
+        var sunBtn = document.getElementById('sun-btn');
+
+        sunBtn.addEventListener('click',()=>{
+          document.body.classList.toggle('dark');
+          if(document.body.classList.contains('dark')){
+            sunBtn.innerHTML="<i class='fas fa-moon'></i>"
+            sunBtn.classList.toggle('moon');            
+          }
+          else{
+            sunBtn.innerHTML="<i class='fas fa-sun'></i>"
+          }
+        })
+
+        
+
+      </script>
+<body>
+</html>

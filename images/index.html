@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navigation">
+        <ul id="navlinks">
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#">Jobs <span class="arrow" id="arrow-span"></span></a>
+            <ul id="job-list">
+              <li><a href="#">Full stack</a></li>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Developer</a></li>
+              <li><a href="#">Hacking</a></li>
+              <li><a href="#">Tester</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--javascript-->
+    <script>
+      var arrowSpan = document.getElementById("arrow-span");
+      var jobList = document.getElementById("job-list");
+
+      //addEventListener for arrow--->
+      arrowSpan.addEventListener('click',()=>{
+        jobList.classList.toggle('open-joblist')
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #222;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #111;
+    z-index: 2000;
+    
+}
+header #navlinks{
+    list-style-type: none;
+    display: flex;
+    column-gap: 150px;
+    
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+/*style for arrow*/
+
+.arrow{
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-top: 6px solid yellow;
+    display: inline-block;
+    margin-left: 5px;
+    
+}
+
+/*set display none for job list or dropdown list*/
+
+#job-list{
+    list-style-type: none;
+    margin: 30px 0 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none; /*default display none*/
+    position: absolute;
+    top: 2.8%;
+    left: 45%;
+    background-color: black;
+    text-align: center;
+    position: absolute;
+    left: 35%;
+    width: 200px;
+    padding: 10px 50px;
+    text-align: center;
+    align-items: center;
+    
+
+    
+
+}
+
+#job-list li{
+    width: inherit;
+    padding: 10px;
+    
+}
+
+#job-list li a{
+    color: white;
+    
+}
+
+#job-list.open-joblist{
+    display: flex;
+    animation: move 1s linear ;
+    
+}
+
+#job-list li:hover{
+    background-color: orange;
+    transition: all 3s linear;
+}
+
+
+/*keyframes*/
+
+@keyframes move {
+    
+    0%{
+        transform: translate(0);
+        
+    }
+
+    50%{
+        transform: translateY(0);
+        padding:  200px 0 0 0;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        box-shadow: 0 0 10px 5px  blue;
+    }
+
+
+    100%{
+        transform: translateY(0);
+    }
+}
